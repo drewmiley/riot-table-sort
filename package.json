@@ -4,7 +4,8 @@
   "description": "A riot table sort component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "test": "eslint src/main.js src/riot-app.tag src/tags/table-sort.tag"
   },
   "author": "drewmiley",
   "license": "MIT",
