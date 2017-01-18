@@ -1,0 +1,11 @@
+{
+  "name": "riot-table-sort",
+  "version": "1.0.0",
+  "description": "A riot table sort component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "drewmiley",
+  "license": "MIT"
+}
