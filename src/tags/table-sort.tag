@@ -6,7 +6,8 @@
 				<th
 					each={header in headers}
 					class='table-sort-head-cell'
-					id={'table-sort-head-cell-' + header.name}>
+					id={'table-sort-head-cell-' + header.name}
+					onclick={onSort}>
 					{header.name}
 				</th>
 			</tr>
@@ -31,6 +32,11 @@
 		this.headers = this.opts.tablesort.headers.map(header => header.name ? header : { name: header });
 		this.data = this.opts.tablesort.data;
 		this.sort = this.opts.tablesort.sort;
+
+		this.onSort = e => {
+			console.log(e.item.header);
+			this.update()
+		};
 
 	</script>
 
