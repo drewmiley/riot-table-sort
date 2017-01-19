@@ -21,12 +21,15 @@ module.exports = {
 			exclude: /node_modules/,
 			loader: 'babel',
 			query: {
-				presets: ['es2015']
+				presets: [
+					'es2015-riot',
+					'es2015'
+				]
 			}
 		}]
 	},
 	output: {
-		path: __dirname + '/dist',
+		path: __dirname,
 		publicPath: '/',
 		filename: 'bundle.js'
 	},

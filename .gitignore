@@ -1,4 +1,5 @@
-dist/bundle.js
-dist/bundle.js.map
+bundle.js
+bundle.js.map
+dist/table-sort.js
 node_modules/
 npm-debug.log

@@ -15,6 +15,12 @@ To run the linter and unit tests, simply run
 npm test
 ```
 
+To create the js file for the tag, simply run
+
+```
+npm run riot
+```
+
 To start the development server, simply run
 
 ```
