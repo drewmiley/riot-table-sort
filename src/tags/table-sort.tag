@@ -1,7 +1,6 @@
 <table-sort>
 
 	<div>
-		table-sort
 		<table class='table-sort'>
 			<thead class='table-sort-head'>
 				<tr class='table-sort-row table-sort-head-row'>
