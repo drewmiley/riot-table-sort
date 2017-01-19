@@ -35,7 +35,8 @@
 
 		this.onSort = e => {
 			console.log(e.item.header);
-			this.update()
+			this.trigger('sort', e.item.header);
+			this.update();
 		};
 
 	</script>
