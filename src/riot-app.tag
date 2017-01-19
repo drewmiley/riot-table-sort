@@ -28,9 +28,10 @@ import './tags/table-sort';
 					score: 50
 				}],
 			sort: [{
-				name: undefined,
+				name: 'score',
 				direction: 'desc'
-			}]
+			},
+			'name']
 		}
 
 	</script>
