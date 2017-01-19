@@ -6,8 +6,8 @@
 				<th
 					each={header in headers}
 					class='table-sort-head-cell'
-					id={'table-sort-head-cell-' + (header.name ? header.name : header)}>
-					{header.name || header}
+					id={'table-sort-head-cell-' + header.name}>
+					{header.name}
 				</th>
 			</tr>
 		</thead>
@@ -17,9 +17,9 @@
 				class='table-sort-row table-sort-body-row'>
 				<td
 					each={header in headers}
-					class={'table-sort-body-cell table-sort-body-cell-' + (header.name ? header.name : header)}
-					id={'table-sort-body-cell-' + (header.name ? header.name : header) + '-' + index}>
-					
+					class={'table-sort-body-cell table-sort-body-cell-' + header.name}
+					id={'table-sort-body-cell-' + header.name + '-' + index}>
+					{datum[header.name]}
 				</td>
 			</tr>
 		</tbody>
@@ -28,7 +28,7 @@
 	<script>
 
 		console.log(this.opts.tablesort);
-		this.headers = this.opts.tablesort.headers;
+		this.headers = this.opts.tablesort.headers.map(header => header.name ? header : { name: header });
 		this.data = this.opts.tablesort.data;
 		this.sort = this.opts.tablesort.sort;
 
