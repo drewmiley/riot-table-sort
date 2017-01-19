@@ -10,28 +10,31 @@ import './tags/table-sort';
 		this.tablesort = {
 			headers: [
 				{ name: 'id', sort: false, direction: 'desc' },
-				{ name: 'name', sort: { direction: 'desc'} },
-				'score'
+				{ name: 'name' },
+				'score',
+				'date'
 			],
 			data: [{
 					id: 0,
 					name: 'Delta',
-					score: 100
+					score: 100,
+					date: new Date('11/21/1987')
 				}, {
 					id: 1,
 					name: 'Alpha',
 					score: 10,
+					date: new Date('11/21/1997'),
 					rogueProperty: false
 				}, {
 					id: 2,
 					name: 'Omega',
-					score: 50
+					score: 50,
+					date: new Date('11/21/1977')
 				}],
-			sort: [{
+			sort: {
 				name: 'score',
 				direction: 'desc'
-			},
-			'name']
+			}
 		}
 
 	</script>
