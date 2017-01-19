@@ -6,6 +6,8 @@
 
 	<script>
 
+		console.log(this.opts.tablesort);
+
 	</script>
 
 </table-sort>
